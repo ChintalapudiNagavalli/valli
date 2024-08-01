@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi Website landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>THAT'S WHAT<br /><span>I LIKE</span></h2>
+          <p>
+            Pepsi is a carbonated soft drink with a cola flavor, manufactured by
+            PepsiCo. As of 2023, Pepsi is the second most valuable soft drink
+            brand worldwide behind Coca-Cola,the two share a long-standing
+            rivalry in what has been called the "cola wars".Pepsi, originally
+            created in 1893 by Caleb Bradham and named "Brad's Drink," was first
+            sold in his drugstore in New Bern, North Carolina. Renamed
+            Pepsi-Cola in 1898 due to its supposed digestive benefits, it was
+            shortened to Pepsi in 1961.
+          </p>
+          <a href="#">View All products</a>
+        </div>
+        <div class="imgBox">
+          <img src="pepsi001 (1).png" class="pepsi" >
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="pepsi001 (1).png" onclick="imgslider('pepsi001 (1).png')"></li>
+        <li><img src="pepsi002 (1).png" onclick="imgslider('pepsi002 (1).png')"></li>
+        <li><img src="pepsi003 (1).png" onclick="imgslider('pepsi003 (1).png')"></li>
+      </ul>
+        <ul class="sci">
+          <li><img href="#" /><img src="facebook.png" ></a></li>
+          <li><img href="#" /><img src="twitter.png" ></a></li>
+          <li><img href="#" /><img src="instagram.png" ></a></li>
+        </ul>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgslider(anything){
+        document.querySelector('.pepsi').src = anything;
+      }
+    </script>
+  </body>
+</html>
